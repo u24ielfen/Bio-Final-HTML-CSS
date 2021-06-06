@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./test.css">
+    <link rel="icon" href="./Images/bubble.png">
+    <title>Animals Gone Extinct</title>
+</head>
+<body>
+    
+    <div class="hero">
+        <nav>
+            <div class="logo">
+                <img src="./Images/Logo.png" alt="">
+            </div>
+                
+            <a href = "./index.html">
+                <button type="button">Home</button>
+            </a>
+                <img src="./Images/menu.png" alt="" class="menu-icon">
+        </nav>
+        <div class="row">
+            <div class="col-1">
+                <h1>Animals Gone Extinct</h1> <br>
+                <label id = "text">
+                    Steller's sea cow, discovered in 1741 and gone extinct in 1768, was one of the few megafaunal species gone extinct. Megafauna means an animal above a cerntain weight. There are several categories: the megaherbivoes (larger than 1000 kg). There are the megacarnivores (bigger than 100 kg), as well as ocean megafauna. Steller's sea cow was estimated to be at around 4000kg and was hunted to extinction by humans.
+                </label> <br><br>
+                <a target = "_blank" href = "https://en.wikipedia.org/wiki/List_of_recently_extinct_mammals"><button type = "button">Explore</button></a> <br> <br> <br><br><br><br>
+                <div class="black">
+                <ul class = "images">
+                    <li class = "btn active"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <br> <br>
+                    <li class = "btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                </ul>
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="./Images/Seacow.jpeg" alt="" id = "banner">
+            </div>
+        </div>
+    </div>
+
+
+<script>
+    var text = document.getElementById("text");
+    var btn = document.getElementsByClassName("btn");
+    var banner = document.getElementById("banner");
+    btn[0].onclick = function(){
+        banner.src = "./Images/Seacow.jpeg"
+
+        animation();
+        text.innerHTML = "Steller's sea cow, discovered in 1741 and gone extinct in 1768, was one of the few megafaunal species gone extinct. Megafauna means an animal above a cerntain weight. There are several categories: the megaherbivoes (larger than 1000 kg). There are the megacarnivores (bigger than 100 kg), as well as ocean megafauna. Steller's sea cow was estimated to be at around 4000kg."
+    }
+    btn[1].onclick = function () {
+        banner.src = "./Images/ElephantBird.jpeg"
+        animation();
+        this.classList.add("active");
+        text.innerHTML = "The Elephant Bird was one of several giant flightless birds that went extinct. This was the largest bird that ever lived, measuring at around 3 meters tall and wieghing 450 kg. Elephant birds were native to Madagascar well after the land was occupied by humans. The longest surviving elephant bird species, survived until roughly 1560-1300 years ago. This species went extinct due to a combination of climate and vegetation changes, as well as habitat loss and deforestation due to humans. They were also commonly hunted by humans, leading to their extinction."
+    }
+    btn[2].onclick = function () {
+        banner.src = "./Images/DeadCow.jpeg"
+        animation();
+        this.classList.add("active");
+        text.innerHTML = "Aurochs, or auroch, is an extinct species of wild ox, from which modern cattle probably descended. They were native of Europe, North America, and some parts of Asia. They were able to survive in central Poland until 1627, but their large height – a shoulder height of 1.8 meters – and large amount of meat led them to their extinction by overhunting."
+
+    }
+    btn[3].onclick = function () {
+            banner.src = "./Images/Dodo.jpeg"
+        animation();
+        this.classList.add("active");
+        text.innerHTML = "The Dodo was a flightless bird of the island in the Indian Ocean - Mauritius. The birds were first seen in 1507 by Portuguese sailors, and some 170 years later, in 1681, the Dodo was found extinct by overhunting. This flightless bird was slightly bigger than a Turkey - weighing 23 kg - was the perfect hunting bird for humans. The Dodo is the most well-known example of human-induced extinction."
+
+        }
+    btn[4].onclick = function () {
+            banner.src = "./Images/Parakeet.jpeg"
+            animation();
+            this.classList.add("active");
+            text.innerHTML = "The Carolina Parakeet was America's only native parrot. Almost exactly 100 years ago, the last captive Carolina Parakeet died at the Cincinnati Zoo (where they also kept the last captive Passenger Pigeon, who had died four years earlier). Scientists have recently analyzed this specie's genome and concluded that the bird's rapid decline whose that human interference drove their extinction. Scientists take considerate interest in this species because it is one of 'the top candidates for de-extinction' (Britannica). This means that there would be a process in which DNA is taken from the specimens and used to 'recreate' the extinct species."
+
+            }
+    btn[5].onclick = function () {
+            banner.src = "./Images/Pigeon.jpeg"
+            animation();
+            this.classList.add("active");
+            text.innerHTML = "Passenger Pigeons were migratory birds that lived in North America. During the 1800s, billions of these inhabited eastern North America. However, they were killed by the millions to later be sold off in markets. The people ate these pigeons in large amounts, but they were also killed because they were believed to pose a threat to agriculture. By the 1870s, the decrease in this bird population was already dramatic. It was later classified as extinct on September 1st, 1914, when the last individual in captivity at the Cincinnati zoo died."
+
+            }
+    btn[6].onclick = function () {
+            banner.src = "./Images/Auk.jpeg"
+            animation();
+            this.classList.add("active");
+            text.innerHTML = "The Great Auk, also called the garefowl was a flightless seabird native to the rocky islands off North Atlantic coasts (St. Kilda, the Faroe Islands, Iceland, etc.). The body of the Great uk was approximately 75 cm long but utterly defenseless. These birds were hunted for food and bait, particularly during the early 1800s. The last known specimens were killed in June 1844 at Eldey island, Iceland. About 80 great auks and the same amount of their eggs are preserved in museums."
+
+        }
+    btn[7].onclick = function () {
+                banner.src = "./Images/Mammoth.jpeg"
+                animation();
+                this.classList.add("active");
+                text.innerHTML = "The Mammoth is a large member of the Elephant family alive in every continent but Australia and South America during the Holocene period (during the last 11,700 years of Earth's history). It is estimated that mammoths went extinct around 10,000 years ago due to overhunting, but small populations of woolly mammoths may have survived in North America until between 10,500 and 7,600 years ago. Mammoths are thought to be huge behemoths, but most mammoths were about as large as modern elephants. The North American imperial mammoth had a shoulder height of 4 metres."
+
+        }
+    btn[8].onclick = function () {
+            banner.src = "./Images/Tasmanian.jpeg"
+            animation();
+            this.classList.add("active");
+            text.innerHTML = "The Tasmanian Tiger, also called the marsupial wolf is the largest carnivorous marsupial species of recent times. The last captive animal died in 1936. They were 100 to 130 cm long, including its 50 cm to 65 cm tail. In 2009 an international team of geneticists announced that they had successfully sequenced the genome of the Tasmanian Tiger, which started debate on cloning this marsupial."
+
+        }
+    btn[9].onclick = function () {
+            banner.src = "./Images/Rhino.jpeg"
+            animation();
+            this.classList.add("active");
+            text.innerHTML = "The western black rhinoceros originally from Angola and eastern Africa. They were abundant in the 1900s. The western black rhinoceros was heavily hunted in the beginning of the 20th century, but the population rose in the 1930s after preservation actions were taken. As protection efforts declined over the years, so did the number of western black rhinos. The western black rhino (northern white rhinos) have recently become extinct in the wild."
+
+        }
+
+    function animation(){
+        banner.classList.add("zoom");
+        setTimeout(function () {
+            banner.classList.remove("zoom");
+            this.classList.add("active");
+
+
+        }, 500)
+        for(b of btn){
+            b.classList.remove("active");
+        }
+    }
+</script>
+
+</body>
+</html>
